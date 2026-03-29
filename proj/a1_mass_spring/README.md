@@ -20,8 +20,8 @@ A vertex $i \in [1,...,N]$ has a mass $m_{i}$. a position $x_{i}$ and a velocity
 A constraint $j \in j [1,...,M]$ consists of:
 
 - a cardinality $n_{j}$
-- a function $C_{j} : \mathbb{R}_{3_{nj}} \to \mathbb{R}$
-- a set of indices $\{i_{1},\dots i_{nj}$, $i_{k} \in [1,...N]$
+- a function $C_{j} : R_{3_{n_j}}$ $\to \mathbb{R}$
+- a set of indices $i_{1},\dots i_{nj}$, $i_{k} \in [1,...N]$
 - a stiffness parameter $k_{j} \in [0...1]$
 - a **type** of either **equality** or **inequality**
 
@@ -37,7 +37,7 @@ The stiffness parameter $k_{j}$ defines the strength of the constraint $j$ in a 
 
 Based on the above model, at timestep $\Delta t$, the dynamic object is simulated as follows:
 
-```{math}
+```math
   forall vertices i
     initialize xi, vi, wi
   endfor
